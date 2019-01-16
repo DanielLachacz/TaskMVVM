@@ -21,8 +21,8 @@ import java.util.Calendar;
 
 public class TaskActivity extends AppCompatActivity {
 
-    public TaskActivityBinding taskActivityBinding;
-    public TaskViewModel taskViewModel;
+    private TaskActivityBinding taskActivityBinding;
+    private TaskViewModel taskViewModel;
     private DatePickerDialog.OnDateSetListener dateSetListener;
     private TimePickerDialog.OnTimeSetListener timeSetListener;
 

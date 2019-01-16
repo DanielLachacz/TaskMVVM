@@ -21,7 +21,7 @@ import java.util.Calendar;
 
 public class EditTaskActivity extends AppCompatActivity {
 
-    public EditTaskActivityBinding editTaskActivityBinding;
+    private EditTaskActivityBinding editTaskActivityBinding;
     private DatePickerDialog.OnDateSetListener dateSetListener;
     private TimePickerDialog.OnTimeSetListener timeSetListener;
     public static final String EXTRA_DESCRIPTION = "com.example.daniellachacz.taskmvvm.EXTRA_DESCRIPTION";

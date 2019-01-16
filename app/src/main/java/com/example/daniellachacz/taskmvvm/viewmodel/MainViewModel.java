@@ -26,7 +26,6 @@ public class MainViewModel extends AndroidViewModel implements RecyclerViewAdapt
         super(application);
         taskRepository = new TaskRepository(application);
         allTasks = taskRepository.getAllTasks();
-        
     }
 
     public LiveData<List<Task>> getAllTasks() {

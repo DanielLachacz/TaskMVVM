@@ -7,10 +7,10 @@ import android.arch.persistence.room.PrimaryKey;
 public class Task {
 
     @PrimaryKey(autoGenerate = true)
-    public int id;
-    public String description;
-    public String date;
-    public String time;
+    private int id;
+    private String description;
+    private String date;
+    private String time;
 
 
     public Task(String description, String date, String time) {

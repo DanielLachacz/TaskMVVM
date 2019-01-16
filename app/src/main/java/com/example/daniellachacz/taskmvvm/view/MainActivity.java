@@ -20,14 +20,13 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private MainViewModel mainViewModel;
-    FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        floatingActionButton = findViewById(R.id.floating_action_button);
+        FloatingActionButton floatingActionButton = findViewById(R.id.floating_action_button);
 
         List<Task> tasks = new ArrayList<>();
 
