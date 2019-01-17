@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             intent.putExtra(EditTaskActivity.EXTRA_TIME, item.getTime());
             intent.putExtra(EditTaskActivity.EXTRA_ID, item.getId());
             startActivity(intent);
-            mainViewModel.onItemClick(view, item);
         });
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);

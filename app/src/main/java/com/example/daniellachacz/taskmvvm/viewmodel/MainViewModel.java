@@ -5,15 +5,13 @@ import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
 import android.databinding.ObservableField;
 import android.support.annotation.NonNull;
-import android.view.View;
 
-import com.example.daniellachacz.taskmvvm.adapter.RecyclerViewAdapter;
 import com.example.daniellachacz.taskmvvm.model.Task;
 import com.example.daniellachacz.taskmvvm.model.data.TaskRepository;
 
 import java.util.List;
 
-public class MainViewModel extends AndroidViewModel implements RecyclerViewAdapter.OnItemClickListener {
+public class MainViewModel extends AndroidViewModel {
 
     private TaskRepository taskRepository;
     private LiveData<List<Task>> allTasks;
@@ -44,12 +42,5 @@ public class MainViewModel extends AndroidViewModel implements RecyclerViewAdapt
         Task task = new Task(description, date, time);
         task.setId(id);
         taskRepository.update(task);
-    }
-
-    @Override
-    public void onItemClick(View view, Task item) {
-        description.set(item.getDescription());
-        date.set(item.getDate());
-        time.set(item.getTime());
     }
 }
